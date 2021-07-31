@@ -95,6 +95,6 @@ window.addEventListener("scroll", function () {
 
 
 
-// function onTop() {
-//     $("body,html").animate({scrollTop: 0}, "slow");
-// }
+function onTop() {
+    $("body,html").animate({scrollTop: 0}, "slow");
+}
