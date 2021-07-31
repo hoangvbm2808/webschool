@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+counterup2@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/counterup2/-/counterup2-1.0.4.tgz#1e7cfd6c83c2145e7ab4e923552cbf7859f34123"
+  integrity sha512-OXPt4cFxxC6g9J9r59cIwsZfTkXaR8eMVxUY2P6yviFclsx3QRbYtfqwtCb0a/Dz2y2ATy7hnpV4Y1LQsfurwQ==
+
 jquery@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"

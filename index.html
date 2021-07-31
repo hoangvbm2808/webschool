@@ -6,25 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>MHIT</title>
 </head>
 <body>
-    
+    <div onclick="onTop()" class="button-top">
+        <div>
+            <img src='./Img/ontop.png'/>
+        </div>
+    </div>
     <section class="home">
-        <header>
+        <header id="header">
             <div class="top">
                 <div class="container">
                     <div class="header-top row">
-                            <p>MHIT<span>University</span></p>
+                            <p class="animate__heartBeat">MHIT<span>University</span></p>
                             <ul>
-                                <i onclick="closeClick()" class="fas fa-times"></i>
+                                <i  class="fas fa-times"></i>
                                 <li class="menu-item"><a href="index.html">Trang chủ</a></li>
-                                <li class="menu-item"><a href="index.html">Giới thiệu</a></li>
+                                <li class="menu-item"><a href="#about-us">Giới thiệu</a></li>
                                 <li class="menu-item"><a href="course.html">Khóa học</a></li>
                                 <li class="menu-item"><a href="index.html">Tin tức</a></li>
                                 <li class="menu-item"><a href="index.html">Liên hệ</a></li>
                             </ul>
-                            <i onclick="menuBarClick()" class="fas fa-bars"></i>
+                            <i class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>
@@ -37,10 +42,13 @@
             <div class="header-text">
                 <h1>Trường Đại Học Hàng Đầu Việt Nam</h1>
                 <p>Hãy đến với chúng tôi để trải nghiệm nền giáo dục tầm thế giới</p>
-                <button>Đăng ký</button>
+                <button onclick="courseClick()">Đăng ký</button>
             </div>
-    
-        
+            <div class="text-run">
+                <h3>Sinh viên: <span class="run1" data-count="12007">12007</span></h3>
+                <h3>Giảng viên <span class="run2">250</span></h3>
+                <h3>Có việc làm: <span class="run1">28082</span></h3>
+            </div>
         </header>
     </section>
 
@@ -150,8 +158,19 @@
     </section>
 
 
+    <section id="about-us" class="about-us">
 
+        <div class="about-text">
+            <div class="about-text-left">
+                <h2>MHIT</h2>
+                <p>Được thành lập vào năm 1990 và trở thành trường đại học công lập từ năm 2006, đến nay Trường Đại học MHIT là trường đại học đa ngành trực thuộc Bộ Giáo dục và Đào tạo, có nhiệm vụ đào tạo đại học và sau đại học, với các hình thức đào tạo chính quy và giáo dục thường xuyên, đào tạo các điểm vệ tinh,…nhằm đáp ứng nhu cầu học tập đa dạng của xã hội, góp phần tăng cường đội ngũ cán bộ khoa học-kỹ thuật cho đất nước</p>
+            </div>
+            <div class="about-text-right">
+                
+            </div>
+        </div>
 
+    </section>
 
 
     <footer>
@@ -199,8 +218,9 @@
     </footer>
 
     
-
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
