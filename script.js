@@ -11,23 +11,23 @@ closebtn.addEventListener("click", function() {
 })
 
 
-// function plus (varObj) {  
-//     varObj.a += 1;
-// }
-// let varObj = {a:0};
-// const btn = document.querySelector(".header-text button")
-// btn.addEventListener("click", function(){
-//     plus(varObj);
-//     console.log(varObj.a);
-//     if (varObj.a == 3 )
-//         {varObj.a = 0;}
-//     if (varObj.a % 3 == 0)
-//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg.jpg')";}
-//     if (varObj.a % 3 == 1)
-//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg2.jpg')";}
-//     if (varObj.a % 3 == 2)
-//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg3.jpg')"}
-// })
+function plus (varObj) {  
+    varObj.a += 1;
+}
+let varObj = {a:0};
+const btn = document.querySelector(".header-text button")
+btn.addEventListener("click", function(){
+    plus(varObj);
+    console.log(varObj.a);
+    if (varObj.a == 3 )
+        {varObj.a = 0;}
+    if (varObj.a % 3 == 0)
+        {document.getElementById("header").style.backgroundImage ="url('./Img/bg.jpg')";}
+    if (varObj.a % 3 == 1)
+        {document.getElementById("header").style.backgroundImage ="url('./Img/bg2.jpg')";}
+    if (varObj.a % 3 == 2)
+        {document.getElementById("header").style.backgroundImage ="url('./Img/bg3.jpg')"}
+})
 
 function courseClick () {
     window.location = "course.html"
@@ -68,30 +68,30 @@ function jsClick() {
 
 
 
-// jQuery(document).ready(function ($) {
-//         $('.run1').counterUp({
-//             delay: 20,
-//             time: 5000
-//         })
-// })
+jQuery(document).ready(function ($) {
+        $('.run1').counterUp({
+            delay: 20,
+            time: 5000
+        })
+})
 
-// jQuery(document).ready(function ($,) {
-//    $('.run2').counterUp({
-//        delay: 10,
-//        time: 4000
-//    })
-// })
-
-
+jQuery(document).ready(function ($,) {
+   $('.run2').counterUp({
+       delay: 10,
+       time: 4000
+   })
+})
 
 
 
 
-// window.addEventListener("scroll", function () {
-//     var x = this.pageYOffset;
-//     if (x > 200) {document.querySelector(".button-top").style.display = "inline"}
-//     else {document.querySelector(".button-top").style.display = ""}
-// })
+
+
+window.addEventListener("scroll", function () {
+    var x = this.pageYOffset;
+    if (x > 200) {document.querySelector(".button-top").style.display = "inline"}
+    else {document.querySelector(".button-top").style.display = ""}
+})
 
 
 
