@@ -11,23 +11,23 @@ closebtn.addEventListener("click", function() {
 })
 
 
-function plus (varObj) {  
-    varObj.a += 1;
-}
-let varObj = {a:0};
-const btn = document.querySelector(".header-text button")
-btn.addEventListener("click", function(){
-    plus(varObj);
-    console.log(varObj.a);
-    if (varObj.a == 3 )
-        {varObj.a = 0;}
-    if (varObj.a % 3 == 0)
-        {document.getElementById("header").style.backgroundImage ="url('./Img/bg.jpg')";}
-    if (varObj.a % 3 == 1)
-        {document.getElementById("header").style.backgroundImage ="url('./Img/bg2.jpg')";}
-    if (varObj.a % 3 == 2)
-        {document.getElementById("header").style.backgroundImage ="url('./Img/bg3.jpg')"}
-})
+// function plus (varObj) {  
+//     varObj.a += 1;
+// }
+// let varObj = {a:0};
+// const btn = document.querySelector(".header-text button")
+// btn.addEventListener("click", function(){
+//     plus(varObj);
+//     console.log(varObj.a);
+//     if (varObj.a == 3 )
+//         {varObj.a = 0;}
+//     if (varObj.a % 3 == 0)
+//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg.jpg')";}
+//     if (varObj.a % 3 == 1)
+//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg2.jpg')";}
+//     if (varObj.a % 3 == 2)
+//         {document.getElementById("header").style.backgroundImage ="url('./Img/bg3.jpg')"}
+// })
 
 function courseClick () {
     window.location = "course.html"
