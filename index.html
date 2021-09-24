@@ -24,10 +24,21 @@
                             <ul>
                                 <i  class="fas fa-times"></i>
                                 <li class="menu-item"><a href="index.html">Trang chủ</a></li>
-                                <li class="menu-item"><a href="#about-us">Giới thiệu</a></li>
+                                <li class="menu-item dropdown">
+                                    <div onclick="dropClick()" class="drop-btn">Giới thiệu <i class="fas fa-chevron-down"></i>
+                                    <ul class="list-about">
+                                        <li class="drop-list dropdown1"><a href="#course">+ Khóa học nổi bậc</a></li>
+                                        <li class="drop-list dropdown2"><a href="#course-about">+ Hệ thống giáo dục</a></li>
+                                        <li class="drop-list dropdown3"><a href="">+ Môi trường học tập</a></li>
+                                        <li class="drop-list dropdown4"><a href="#course-system">+ Cơ sở vật chất</a></li>
+                                        <li class="drop-list dropdown5"><a href="#about-us">+ Về chúng tôi</a></li>
+                                    </ul>
+                                </div>
+                                
+                                </li>
                                 <li class="menu-item"><a href="course.html">Khóa học</a></li>
                                 <li class="menu-item"><a href="index.html">Tin tức</a></li>
-                                <li class="menu-item"><a href="index.html">Liên hệ</a></li>
+                                <li class="menu-item"><a href="#footer">Liên hệ</a></li>
                             </ul>
                             <i class="fas fa-bars"></i>
                     </div>
@@ -40,9 +51,9 @@
             </div>
     
             <div class="header-text">
-                <h1>Trường Đại Học Hàng Đầu Việt Nam</h1>
+                <h1>Trường Đại Học IT Hàng Đầu Việt Nam</h1>
                 <p>Hãy đến với chúng tôi để trải nghiệm nền giáo dục tầm thế giới</p>
-                <button onclick="courseClick()">Đăng ký</button>
+                <button>Đăng ký</button>
             </div>
             <div class="text-run">
                 <h3>Sinh viên: <span class="run1" data-count="12007">12007</span></h3>
@@ -52,7 +63,7 @@
         </header>
     </section>
 
-    <section class="course">
+    <section id="course" class="course">
         <h1>Các khóa học</h1>
         <div class="course-items container-course row">
             <div onclick="jsClick() " class="course-item">
@@ -94,7 +105,7 @@
             <div class="course-item">
                 <img src="./Img/java.jpg" alt="">
                 <h2>Java cơ bản</h2>
-                <p>Khóa học lập trình Java cơ bản cho người mới bắt đầu, khóa học này sẽ là nền tảng cho khóa Java nâng cao để tiến tới Java Web hay lập trình Android.</p>
+                <p>Khóa học lập trình Java cơ bản cho người mới bắt đầu sẽ là nền tảng cho khóa Java nâng cao để tiến tới Java Web hay lập trình Android.</p>
                 <hr>
                 <div class="confirm-item">
                     <span class="time">
@@ -106,25 +117,32 @@
         </div>
     </section>
 
-    <section class="course">
+    <section  id="course-about" class="course-about">
         <h1>Hệ thống</h1>
         <div class="about-items container row">
-            <div class="about-item">
+            <div class="about-item1 about-item">
                 <h2>Hà Nội</h2>
-                <img src="./Img/brand1.jpg" alt="">
             </div>
-            <div class="about-item">
+            <div class="about-item2 about-item">
                 <h2>Đà Nẵng</h2>
-                <img src="./Img/brand2.jpg" alt="">
             </div>
-            <div class="about-item">
+            <div class="about-item3 about-item">
                 <h2>Hồ Chí Minh</h2>
-                <img src="./Img/brand3.jpg" alt="">
             </div>
         </div>
     </section>
 
-    <section class="course">
+    <section class="video">
+        <div class="text-video">
+            <h1>MÔI TRƯỜNG HỌC TẬP NĂNG ĐỘNG-SÁNG TẠO-CHẤT LƯỢNG</h1>
+            <h1>HÃY CÙNG <span>MHIT</span> TRẢI NGHIỆM NỀN GIÁO DỤC MANG TẦM THẾ GIỚI</h1>
+        </div>
+        <video controlslist="nodownload" class="banner-video" autoplay="" loop="" muted="" playsinline="">
+            <source src="./Img/Một ngày ở Fulbright với Tân (Teaser)_Trim.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="course-system" class="course-system">
         <h1>Cơ sở vật chất</h1>
         <div class="system-items container row">
             <div class="system-item">
@@ -173,14 +191,14 @@
     </section>
 
 
-    <footer>
+    <footer id="footer">
 
         <section class="footer row">
             <div class="map">
                 <h1>MHIT University</h1>
                 <p><i class="fas fa-phone"></i> 028-38364748</p>
                 <p><i class="fas fa-envelope"></i> E-mail: ou@ou.edu.vn</p>
-                <p><i class="fas fa-map-marker"></i> Số 371 Nguyễn Kiệm, P.3, Gò Vấp, TP.HCM</p>
+                <p><i class="fas fa-map-marker"> </i> Số 371 Nguyễn Kiệm, P.3, Gò Vấp, TP.HCM</p>
                 <hr>
                 <div class="follow-us">
                     <div class="follow-text">

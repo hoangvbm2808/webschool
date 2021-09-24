@@ -11,6 +11,11 @@ closebtn.addEventListener("click", function() {
 })
 
 
+function dropClick() {
+    document.querySelector(".fa-chevron-down").style.transform = "rotate(-180deg)";
+}
+
+
 // function plus (varObj) {  
 //     varObj.a += 1;
 // }
@@ -98,3 +103,6 @@ window.addEventListener("scroll", function () {
 function onTop() {
     $("body,html").animate({scrollTop: 0}, "slow");
 }
+
+
+
